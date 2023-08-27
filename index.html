@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sun Glare</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Toggle layers</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <!-- Title added here -->
+  <div id="title">Glasgow City Centre Sun Glare </div>
+  
+  <div id='map'></div>
+  <div id='console'>
+    <h1>Sun Glare Checking</h1>
+    <p>Data: <a href='https://www.timeanddate.com/sun/uk/glasgow'>Sun Position Data </a> in Glasgow city centre</p>
+
+    <!-- Slider goes below -->
+    <div class='session' id='sliderbar'>
+      <h2>Month: <label id='active-month'>January</label></h2>
+      <input id='slider' class='row' type='range' min='1' max='12' step='1' value='1' />
+    </div>
+
+    <div class='session' id='timeSliderbar'>
+      <h2>Time: <label id='active-time'>4:30</label></h2>
+      <input id='timeSlider' class='row' type='range' min='1' max='33' step='1' value='1' />
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
